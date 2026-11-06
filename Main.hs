@@ -2,10 +2,13 @@
 --
 -- Each input line is parsed as a proposition and classified as a
 -- tautology, a contradiction or a contingent proposition.
-module Main (main) where
+module Main where
+
+-- you shouldn't submit the Parsing module 
+-- (but you should keep be import below)
+import Parsing
 
 import Data.Char (isAsciiLower, isSpace)
-import Parsing (Parser, char, many, parse, satisfy)
 
 -- | Logical propositions.
 data Prop
